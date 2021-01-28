@@ -1,5 +1,5 @@
 {
-  "name": "webpack-basic",
+  "name": "reactbaseapp",
   "version": "1.0.0",
   "description": "Learning all about webpack 4",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "preprocessing",
     "react"
   ],
-  "author": "Eve Porcello",
+  "author": "Tarak Patel",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.2.2",
