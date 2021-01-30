@@ -36,7 +36,7 @@ jobs:
     environment:
       IMAGE_NAME: tarak311/baseapp
     docker:
-      - image: circleci/node:9.4.0
+      - image: circleci/buildpack-deps:stretch
     steps:
       - checkout
       - run:
