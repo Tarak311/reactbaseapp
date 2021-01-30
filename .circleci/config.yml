@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  test:
     docker:
       # specify the version you desire here
       - image: circleci/node:9.4.0
@@ -30,7 +30,19 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: npm run test
+     - run: npm run test
+  
+  build:
+    build:
+    environment:
+      IMAGE_NAME: circleci/node:9.4.0
+    docker:
+      - image: tarak311/baseapp
+    steps:
+      - checkout
+      - run:
+          name: Build Docker image
+          command: docker build -t $IMAGE_NAME:latest 
 
 
 
