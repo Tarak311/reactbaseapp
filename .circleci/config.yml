@@ -34,7 +34,7 @@ jobs:
 
   build:
     environment:
-      IMAGE_NAME: tarak311@baseapp
+      IMAGE_NAME: tarak311/baseapp
     docker:
       - image: circleci/node:9.4.0
     steps:
