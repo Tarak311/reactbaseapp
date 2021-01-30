@@ -53,8 +53,3 @@ workflows:
       - build
           requires:
             - test
-          filters:
-            branches:
-              only:
-                - /^development$/
-                - /^main$/
