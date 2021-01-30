@@ -1,35 +1,93 @@
 {
-  "name": "reactbaseapp",
-  "version": "1.0.0",
-  "description": "Learning all about webpack 4",
+  "name": "NimbusPortfollio",
+  "version": "1.0.1",
+  "description": "Learning Fullstack JavaScript Development: MongoDB, Node.js, React.js",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/webpack -w",
-    "start:dev": "./node_modules/.bin/webpack-dev-server"
+    "start": "nodemon ./server.js",
+    "dev": "webpack -wd",
+    "prod": "webpack",
+    "init": "jest --init",
+    "test": "jest"
   },
-  "keywords": [
-    "webpack",
-    "preprocessing",
-    "react"
-  ],
-  "author": "Tarak Patel",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tarak311/NimbusApp.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Tarak311/NimbusApp/issues"
+  },
+  "homepage": "https://github.com/Tarak311/NimbusApp/#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "bootstrap": "^4.5.3",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^2.6.2",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.1",
+    "jquery": "^3.3.1",
+    "method-override": "^3.0.0",
+    "mongodb": "^2.2.36",
+    "mongoose": "^5.11.12",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "proptypes": "^1.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-hot": "0.0.1",
+    "react-router-dom": "^5.2.0",
+    "web-vitals": "^0.2.4"
+  },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-decorators": "^7.12.12",
+    "@babel/plugin-proposal-json-strings": "^7.12.1",
+    "@babel/plugin-transform-react-jsx": "^7.12.12",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/user-event": "^12.6.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^7.0.0",
+    "babel-jest": "^23.4.2",
     "babel-loader": "^8.0.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.17.0",
+    "chokidar": "^3.4.0",
     "css-loader": "^2.1.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^3.7.1",
+    "eslint-plugin-react": "^6.4.0",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "jest-environment-jsdom": "^23.4.0",
+    "jest-junit": "^3.6.0",
+    "nodemon": "^1.19.1",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
   },
-  "dependencies": {
-    "jquery": "^3.3.1",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
