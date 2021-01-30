@@ -51,3 +51,10 @@ workflows:
     jobs:
       - test
       - build
+          requires:
+            - test
+          filters:
+            branches:
+              only:
+                - development
+                - main
