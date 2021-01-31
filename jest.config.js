@@ -38,7 +38,11 @@ module.exports = {
   //   "lcov",
   //   "clover"
   // ],
-
+  "verbose": true,
+  "transform": {
+    "^.+\\.js$": "babel-jest",
+    "^.+\\.(css|scss|less)$": "jest-css-modules-transform"
+  },
   // An object that configures minimum threshold enforcement for coverage results
   // coverageThreshold: null,
 

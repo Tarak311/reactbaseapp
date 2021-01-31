@@ -24,6 +24,7 @@ export class Contact extends Component {
                           id="name"
                           className="form-control"
                           placeholder="Name"
+                          label = "Name"
                           required="required"
                         />
                         <p className="help-block text-danger"></p>
@@ -70,11 +71,11 @@ export class Contact extends Component {
                   {this.props.data ? this.props.data.address : "loading"}
                 </p>
               </div>
-              <div className="contact-item">
-                <p>
+              <div className="contact-item" >
+                <p id="phone"  >
                   <span>
                     <i className="fa fa-phone"></i> Phone
-                  </span>{" "}
+                  </span>
                   {this.props.data ? this.props.data.phone : "loading"}
                 </p>
               </div>

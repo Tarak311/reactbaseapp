@@ -37,10 +37,11 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "proptypes": "^1.1.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
     "react-hot": "0.0.1",
     "react-router-dom": "^5.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "test-utils": "^1.1.1",
     "web-vitals": "^0.2.4"
   },
   "devDependencies": {
@@ -64,14 +65,24 @@
     "chokidar": "^3.4.0",
     "css-loader": "^2.1.0",
     "dotenv": "^8.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
     "eslint": "^3.7.1",
     "eslint-plugin-react": "^6.4.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^3.2.0",
+    "postcss": "^8.2.4",
+    "jest-css-modules": "^2.1.0",
+    "jest-css-modules-transform": "^4.2.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
     "jest": "^23.6.0",
     "jest-environment-jsdom": "^23.4.0",
     "jest-junit": "^3.6.0",
+    "jsdom": "16.4.0",
+    "jsdom-global": "3.0.2",
     "nodemon": "^1.19.1",
+    "enzyme-to-json": "^3.6.1",
+    "react-test-renderer": "^17.0.1",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.28.4",
@@ -89,5 +100,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.(css|scss|less)$": "jest-css-modules-transform"
+    }
   }
 }
