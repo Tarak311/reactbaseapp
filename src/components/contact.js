@@ -24,6 +24,7 @@ export class Contact extends Component {
                           id="name"
                           className="form-control"
                           placeholder="Name"
+                          label = "Name"
                           required="required"
                         />
                         <p className="help-block text-danger"></p>
