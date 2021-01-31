@@ -107,6 +107,5 @@
       "^.+\\.js$": "babel-jest",
       "^.+\\.(css|scss|less)$": "jest-css-modules-transform"
     }
-  
   }
 }
